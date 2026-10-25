@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loja Online — CaféCode</title>
+  <title>Loja Online — Pausa para o Café</title>
   
   <!-- CSS do Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,6 +17,383 @@
     Frete grátis para todo o Brasil em compras acima de R$ 199!
   </div>
 
+<!-- SEÇÃO 2: NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top">
+    <div class="container">
+      
+      <!-- 1. Logótipo / Nome da loja -->
+     <a class="navbar-brand fw-bold text-primary" href="#">☕ Pausa para o Café</a>
+      
+      <!-- 2. Botão Hambúrguer (aparece apenas no telemóvel) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- 3. Conteúdo que recolhe no telemóvel -->
+      <div class="collapse navbar-collapse" id="menuNavbar">
+        
+        <!-- Links de Navegação -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Início</a>
+          </li>
+          
+          <!-- Dropdown Categorias -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Categorias
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cafés Especiais</a></li>
+              <li><a class="dropdown-item" href="#">Máquinas & Acessórios</a></li>
+              <li><a class="dropdown-item" href="#">Canecas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ofertas</a>
+          </li>
+        </ul>
+
+        <!-- Campo de Pesquisa -->
+        <form class="d-flex me-lg-3 my-2 my-lg-0" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar produtos...">
+          <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+
+        <!-- Botão do Carrinho com Badge -->
+        <a href="#" class="btn btn-primary position-relative mt-2 mt-lg-0">
+          <i class="bi bi-cart3"></i> Carrinho
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            3
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </nav>
+
+<!-- SEÇÃO 3: CARROSSEL DE BANNERS -->
+  <div id="carrosselPrincipal" class="carousel slide my-4" data-bs-ride="carousel">
+    
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carrosselPrincipal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carrosselPrincipal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carrosselPrincipal" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner rounded shadow-sm">
+      <div class="carousel-item active">
+        <img src="https://placehold.co/1200x400/2c3e50/ffffff?text=Ofertas+Imperd%C3%ADveis+de+Caf%C3%A9" class="d-block w-100" alt="Banner 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://placehold.co/1200x400/16a085/ffffff?text=Novas+M%C3%A1quinas+Expressas" class="d-block w-100" alt="Banner 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://placehold.co/1200x400/8e44ad/ffffff?text=Frete+Gr%C3%A1tis+em+Acess%C3%B3rios" class="d-block w-100" alt="Banner 3">
+      </div>
+    </div>
+
+    <!-- Controles (Setas) -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carrosselPrincipal" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carrosselPrincipal" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+
+  </div>
+
+  <!-- SEÇÃO 4: CATEGORIAS -->
+  <section class="container my-5">
+    <h3 class="text-center mb-4 fw-bold">Categorias</h3>
+    <div class="row text-center g-3">
+      
+      <!-- 6 Colunas (Desktop) / 3 Colunas (Mobile) -->
+      <div class="col-4 col-lg-2">
+        <a href="#" class="text-decoration-none text-dark d-block p-3 border rounded shadow-sm h-100 bg-light">
+          <img src="https://placehold.co/100x100/e9ecef/212529?text=Gr%C3%A3os" class="img-fluid rounded-circle mb-2" alt="Grãos">
+          <h6 class="fw-semibold small m-0">Grãos</h6>
+        </a>
+      </div>
+
+      <div class="col-4 col-lg-2">
+        <a href="#" class="text-decoration-none text-dark d-block p-3 border rounded shadow-sm h-100 bg-light">
+          <img src="https://placehold.co/100x100/e9ecef/212529?text=C%C3%A1psulas" class="img-fluid rounded-circle mb-2" alt="Cápsulas">
+          <h6 class="fw-semibold small m-0">Cápsulas</h6>
+        </a>
+      </div>
+
+      <div class="col-4 col-lg-2">
+        <a href="#" class="text-decoration-none text-dark d-block p-3 border rounded shadow-sm h-100 bg-light">
+          <img src="https://placehold.co/100x100/e9ecef/212529?text=M%C3%A1quinas" class="img-fluid rounded-circle mb-2" alt="Máquinas">
+          <h6 class="fw-semibold small m-0">Máquinas</h6>
+        </a>
+      </div>
+
+      <div class="col-4 col-lg-2">
+        <a href="#" class="text-decoration-none text-dark d-block p-3 border rounded shadow-sm h-100 bg-light">
+          <img src="https://placehold.co/100x100/e9ecef/212529?text=Moedores" class="img-fluid rounded-circle mb-2" alt="Moedores">
+          <h6 class="fw-semibold small m-0">Moedores</h6>
+        </a>
+      </div>
+
+      <div class="col-4 col-lg-2">
+        <a href="#" class="text-decoration-none text-dark d-block p-3 border rounded shadow-sm h-100 bg-light">
+          <img src="https://placehold.co/100x100/e9ecef/212529?text=Canecas" class="img-fluid rounded-circle mb-2" alt="Canecas">
+          <h6 class="fw-semibold small m-0">Canecas</h6>
+        </a>
+      </div>
+
+      <div class="col-4 col-lg-2">
+        <a href="#" class="text-decoration-none text-dark d-block p-3 border rounded shadow-sm h-100 bg-light">
+          <img src="https://placehold.co/100x100/e9ecef/212529?text=Kits" class="img-fluid rounded-circle mb-2" alt="Kits">
+          <h6 class="fw-semibold small m-0">Kits</h6>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+<!-- SEÇÃO 5: PRODUTOS EM DESTAQUE -->
+  <section class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h3 class="fw-bold m-0">Destaques</h3>
+      <a href="#" class="text-primary text-decoration-none fw-semibold">Ver todos <i class="bi bi-arrow-right"></i></a>
+    </div>
+
+    <!-- Grid: 4 por linha (Desktop) / 2 (Tablet) / 1 (Mobile) -->
+    <div class="row g-4">
+      
+      <!-- Produto 1 (Com Modal e Promoção) -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm position-relative">
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">Promoção</span>
+          <img src="https://placehold.co/400x300/d35400/ffffff?text=Caf%C3%A9+Especial" class="card-img-top" alt="Café Especial">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold fs-6">Café Especial Gourmet 500g</h5>
+            <p class="card-text text-muted small">Grãos selecionados 100% Arábica de torra média.</p>
+            <div class="mt-auto">
+              <span class="text-muted text-decoration-line-through small me-2">R$ 45,00</span>
+              <span class="fw-bold text-success fs-5">R$ 34,90</span>
+              <div class="d-grid gap-2 mt-3">
+                <!-- Botão que abre o Modal -->
+                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProduto1">
+                  Ver Detalhes
+                </button>
+                <button class="btn btn-primary btn-sm"><i class="bi bi-cart-plus"></i> Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 2 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://placehold.co/400x300/2980b9/ffffff?text=Prensa+Francesa" class="card-img-top" alt="Prensa Francesa">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold fs-6">Prensa Francesa Inox 600ml</h5>
+            <p class="card-text text-muted small">Preparo prático mantendo os óleos essenciais do café.</p>
+            <div class="mt-auto">
+              <span class="fw-bold text-dark fs-5">R$ 89,90</span>
+              <div class="d-grid gap-2 mt-3">
+                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProduto1">Ver Detalhes</button>
+                <button class="btn btn-primary btn-sm"><i class="bi bi-cart-plus"></i> Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 3 (Com Promoção) -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm position-relative">
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">Promoção</span>
+          <img src="https://placehold.co/400x300/27ae60/ffffff?text=Moedor+Manual" class="card-img-top" alt="Moedor Manual">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold fs-6">Moedor de Café Ajustável</h5>
+            <p class="card-text text-muted small">Lâminas de cerâmica para moagem precisa na hora.</p>
+            <div class="mt-auto">
+              <span class="text-muted text-decoration-line-through small me-2">R$ 120,00</span>
+              <span class="fw-bold text-success fs-5">R$ 99,00</span>
+              <div class="d-grid gap-2 mt-3">
+                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProduto1">Ver Detalhes</button>
+                <button class="btn btn-primary btn-sm"><i class="bi bi-cart-plus"></i> Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 4 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://placehold.co/400x300/8e44ad/ffffff?text=Caneca+T%C3%A9rmica" class="card-img-top" alt="Caneca Térmica">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold fs-6">Caneca Térmica Inox 450ml</h5>
+            <p class="card-text text-muted small">Mantém o seu café quente por até 4 horas contínuas.</p>
+            <div class="mt-auto">
+              <span class="fw-bold text-dark fs-5">R$ 59,90</span>
+              <div class="d-grid gap-2 mt-3">
+                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProduto1">Ver Detalhes</button>
+                <button class="btn btn-primary btn-sm"><i class="bi bi-cart-plus"></i> Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MODAL DO PRODUTO -->
+  <div class="modal fade" id="modalProduto1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Café Especial Gourmet 500g</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="https://placehold.co/400x300/d35400/ffffff?text=Caf%C3%A9+Especial" class="img-fluid rounded mb-3" alt="Produto">
+          <p class="text-muted">Grãos selecionados a mais de 1.200m de altitude. Notas sensoriais de chocolate e caramelo com acidez equilibrada.</p>
+          <h4 class="text-success fw-bold">R$ 34,90</h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary"><i class="bi bi-cart-plus"></i> Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEÇÃO 6: BANNERS PROMOCIONAIS (6 + 6) -->
+  <section class="container my-5">
+    <div class="row g-4">
+      <div class="col-12 col-md-6">
+        <div class="p-4 rounded text-white text-center shadow-sm d-flex flex-column justify-content-center align-items-center" style="min-height: 200px; background: linear-gradient(135deg, #2c3e50, #3498db);">
+          <h4 class="fw-bold">Clube de Assinatura</h4>
+          <p class="mb-3">Receba cafés selecionados todos os meses na sua casa.</p>
+          <a href="#" class="btn btn-light text-dark fw-bold">Saiba Mais</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="p-4 rounded text-white text-center shadow-sm d-flex flex-column justify-content-center align-items-center" style="min-height: 200px; background: linear-gradient(135deg, #d35400, #e67e22);">
+          <h4 class="fw-bold">Kits para Presente</h4>
+          <p class="mb-3">Caixas especiais com canecas, moedores e grãos nobres.</p>
+          <a href="#" class="btn btn-light text-dark fw-bold">Ver Kits</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 7: BENEFÍCIOS (4 + 4 + 4) -->
+  <section class="bg-light py-5 border-top border-bottom">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-12 col-md-4">
+          <div class="p-3">
+            <i class="bi bi-truck fs-1 text-primary mb-2"></i>
+            <h5 class="fw-bold fs-6">Entrega para todo o Brasil</h5>
+            <p class="text-muted small m-0">Envio rápido e rastreado para o seu endereço.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="p-3">
+            <i class="bi bi-shield-check fs-1 text-primary mb-2"></i>
+            <h5 class="fw-bold fs-6">Pagamento Seguro</h5>
+            <p class="text-muted small m-0">Cartão de crédito, Pix e boleto bancário.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="p-3">
+            <i class="bi bi-arrow-counterclockwise fs-1 text-primary mb-2"></i>
+            <h5 class="fw-bold fs-6">Troca Grátis em 30 dias</h5>
+            <p class="text-muted small m-0">Garantia total de satisfação no seu pedido.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 8: NEWSLETTER -->
+  <section class="container my-5 text-center">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <h4 class="fw-bold mb-2">Receba as nossas ofertas</h4>
+        <p class="text-muted small mb-4">Cadastre o seu e-mail e receba cupões de desconto exclusivos!</p>
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Seu e-mail aqui..." aria-label="Seu e-mail">
+          <button class="btn btn-primary" type="button">Assinar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 9: RODAPÉ (FOOTER) -->
+  <footer class="bg-dark text-white pt-5 pb-4 mt-auto">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        
+        <!-- Coluna 1: Institucional -->
+        <div class="col-6 col-md-3">
+          <h6 class="fw-bold text-uppercase mb-3">Institucional</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-white-50 text-decoration-none">Sobre a Pausa para o Café</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Nossas Lojas</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Trabalhe Conosco</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Sustentabilidade</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 2: Ajuda -->
+        <div class="col-6 col-md-3">
+          <h6 class="fw-bold text-uppercase mb-3">Ajuda</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-white-50 text-decoration-none">Central de Atendimento</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Políticas de Entrega</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Trocas e Devoluções</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Termos de Uso</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Redes Sociais -->
+        <div class="col-6 col-md-3">
+          <h6 class="fw-bold text-uppercase mb-3">Redes Sociais</h6>
+          <div class="d-flex gap-3 fs-5">
+            <a href="#" class="text-white-50"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white-50"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white-50"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="text-white-50"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Coluna 4: Formas de Pagamento -->
+        <div class="col-6 col-md-3">
+          <h6 class="fw-bold text-uppercase mb-3">Pagamento</h6>
+          <div class="d-flex flex-wrap gap-2 fs-4 text-white-50">
+            <i class="bi bi-credit-card-2-front"></i>
+            <i class="bi bi-qr-code"></i>
+            <i class="bi bi-bank"></i>
+            <i class="bi bi-wallet2"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="border-secondary">
+
+      <!-- Direitos Autorais -->
+      <div class="text-center text-white-50 small pt-2">
+        <p class="m-0">© 2026 Pausa para o Café — CNPJ 00.000.000/0001-00. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  
   <!-- JavaScript do Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
