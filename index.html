@@ -157,97 +157,92 @@
   </div>
 </section>
 
+
 <!-- SEÇÃO 5: PRODUTOS EM DESTAQUE -->
-  <section class="container my-5">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-      <h3 class="fw-bold m-0">Destaques</h3>
-      <a href="#" class="text-primary text-decoration-none fw-semibold">Ver todos <i class="bi bi-arrow-right"></i></a>
+<section class="container my-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h3 class="fw-bold m-0">Destaques</h3>
+    <a href="#" class="text-decoration-none fw-semibold">Ver todos &rarr;</a>
+  </div>
+
+  <div class="row g-4">
+    <!-- Produto 1 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm position-relative">
+        <span class="badge bg-danger position-absolute top-0 start-0 m-2">Promoção</span>
+        <img src="prod-cafe.jpg" class="card-img-top" style="height: 220px; object-fit: cover;" alt="Café Especial">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title fw-bold fs-6">Café Especial Gourmet 500g</h5>
+          <p class="card-text text-muted small">Grãos selecionados 100% Arábica de torra média.</p>
+          <div class="mt-auto">
+            <span class="text-muted text-decoration-line-through small me-2">R$ 45,00</span>
+            <span class="fw-bold text-success fs-5">R$ 34,90</span>
+            <div class="d-grid gap-2 mt-3">
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProduto1">Ver Detalhes</button>
+              <button class="btn btn-primary btn-sm"><i class="bi bi-cart-plus"></i> Adicionar ao carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Grid: 4 por linha (Desktop) / 2 (Tablet) / 1 (Mobile) -->
-    <div class="row g-4">
-      
-      <!-- Produto 1 (Com Modal e Promoção) -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card h-100 shadow-sm position-relative">
-          <span class="badge bg-danger position-absolute top-0 start-0 m-2">Promoção</span>
-          <img src="prod-cafe.jpg" class="card-img-top" alt="Café Especial">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title fw-bold fs-6">Café Especial Gourmet 500g</h5>
-            <p class="card-text text-muted small">Grãos selecionados 100% Arábica de torra média.</p>
-            <div class="mt-auto">
-              <span class="text-muted text-decoration-line-through small me-2">R$ 45,00</span>
-              <span class="fw-bold text-success fs-5">R$ 34,90</span>
-              <div class="d-grid gap-2 mt-3">
-                <!-- Botão que abre o Modal -->
-                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProduto1">
-                  Ver Detalhes
-                </button>
-                <button class="btn btn-primary btn-sm"><i class="bi bi-cart-plus"></i> Adicionar ao carrinho</button>
-              </div>
+    <!-- Produto 2 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="prod-prensa.jpg" class="card-img-top" style="height: 220px; object-fit: cover;" alt="Prensa Francesa">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title fw-bold fs-6">Prensa Francesa Inox 600ml</h5>
+          <p class="card-text text-muted small">Preparo prático mantendo os óleos essenciais do café.</p>
+          <div class="mt-auto">
+            <span class="fw-bold text-dark fs-5">R$ 89,90</span>
+            <div class="d-grid gap-2 mt-3">
+              <button type="button" class="btn btn-outline-primary btn-sm">Ver Detalhes</button>
+              <button class="btn btn-primary btn-sm"><i class="bi bi-cart-plus"></i> Adicionar ao carrinho</button>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Produto 2 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card h-100 shadow-sm">
-          <img src="prod-prensa.jpg" class="card-img-top" alt="Prensa Francesa">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title fw-bold fs-6">Prensa Francesa Inox 600ml</h5>
-            <p class="card-text text-muted small">Preparo prático mantendo os óleos essenciais do café.</p>
-            <div class="mt-auto">
-              <span class="fw-bold text-dark fs-5">R$ 89,90</span>
-              <div class="d-grid gap-2 mt-3">
-                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProduto1">Ver Detalhes</button>
-                <button class="btn btn-primary btn-sm"><i class="bi bi-cart-plus"></i> Adicionar ao carrinho</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Produto 3 (Com Promoção) -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card h-100 shadow-sm position-relative">
-          <span class="badge bg-danger position-absolute top-0 start-0 m-2">Promoção</span>
-          <img src="prod-moedor.jpg" class="card-img-top" alt="Moedor Manual">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title fw-bold fs-6">Moedor de Café Ajustável</h5>
-            <p class="card-text text-muted small">Lâminas de cerâmica para moagem precisa na hora.</p>
-            <div class="mt-auto">
-              <span class="text-muted text-decoration-line-through small me-2">R$ 120,00</span>
-              <span class="fw-bold text-success fs-5">R$ 99,00</span>
-              <div class="d-grid gap-2 mt-3">
-                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProduto1">Ver Detalhes</button>
-                <button class="btn btn-primary btn-sm"><i class="bi bi-cart-plus"></i> Adicionar ao carrinho</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Produto 4 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card h-100 shadow-sm">
-          <img src="prod-caneca.jpg" class="card-img-top" alt="Caneca Térmica">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title fw-bold fs-6">Caneca Térmica Inox 450ml</h5>
-            <p class="card-text text-muted small">Mantém o seu café quente por até 4 horas contínuas.</p>
-            <div class="mt-auto">
-              <span class="fw-bold text-dark fs-5">R$ 59,90</span>
-              <div class="d-grid gap-2 mt-3">
-                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProduto1">Ver Detalhes</button>
-                <button class="btn btn-primary btn-sm"><i class="bi bi-cart-plus"></i> Adicionar ao carrinho</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </section>
+
+    <!-- Produto 3 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm position-relative">
+        <span class="badge bg-danger position-absolute top-0 start-0 m-2">Promoção</span>
+        <img src="prod-moedor.jpg" class="card-img-top" style="height: 220px; object-fit: cover;" alt="Moedor de Café">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title fw-bold fs-6">Moedor de Café Ajustável</h5>
+          <p class="card-text text-muted small">Lâminas de cerâmica para moagem precisa na hora.</p>
+          <div class="mt-auto">
+            <span class="text-muted text-decoration-line-through small me-2">R$ 120,00</span>
+            <span class="fw-bold text-success fs-5">R$ 99,00</span>
+            <div class="d-grid gap-2 mt-3">
+              <button type="button" class="btn btn-outline-primary btn-sm">Ver Detalhes</button>
+              <button class="btn btn-primary btn-sm"><i class="bi bi-cart-plus"></i> Adicionar ao carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produto 4 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="prod-caneca.jpg" class="card-img-top" style="height: 220px; object-fit: cover;" alt="Caneca Térmica">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title fw-bold fs-6">Caneca Térmica Inox 450ml</h5>
+          <p class="card-text text-muted small">Mantém o seu café quente por até 4 horas contínuas.</p>
+          <div class="mt-auto">
+            <span class="fw-bold text-dark fs-5">R$ 59,90</span>
+            <div class="d-grid gap-2 mt-3">
+              <button type="button" class="btn btn-outline-primary btn-sm">Ver Detalhes</button>
+              <button class="btn btn-primary btn-sm"><i class="bi bi-cart-plus"></i> Adicionar ao carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- MODAL DO PRODUTO -->
   <div class="modal fade" id="modalProduto1" tabindex="-1" aria-hidden="true">
@@ -270,25 +265,32 @@
     </div>
   </div>
 
-  <!-- SEÇÃO 6: BANNERS PROMOCIONAIS (6 + 6) -->
-  <section class="container my-5">
-    <div class="row g-4">
-      <div class="col-12 col-md-6">
-        <div class="p-4 rounded text-white text-center shadow-sm d-flex flex-column justify-content-center align-items-center" style="min-height: 200px; background: linear-gradient(135deg, #2c3e50, #3498db);">
-          <h4 class="fw-bold">Clube de Assinatura</h4>
-          <p class="mb-3">Receba cafés selecionados todos os meses na sua casa.</p>
-          <a href="#" class="btn btn-light text-dark fw-bold">Saiba Mais</a>
-        </div>
-      </div>
-      <div class="col-12 col-md-6">
-        <div class="p-4 rounded text-white text-center shadow-sm d-flex flex-column justify-content-center align-items-center" style="min-height: 200px; background: linear-gradient(135deg, #d35400, #e67e22);">
-          <h4 class="fw-bold">Kits para Presente</h4>
-          <p class="mb-3">Caixas especiais com canecas, moedores e grãos nobres.</p>
-          <a href="#" class="btn btn-light text-dark fw-bold">Ver Kits</a>
-        </div>
+<!-- BANNERS PROMOCIONAIS -->
+<section class="container my-5">
+  <div class="row g-4">
+    
+    <!-- Banner 1: Clube de Assinatura -->
+    <div class="col-12 col-md-6">
+      <div class="p-5 text-white rounded shadow-sm text-center d-flex flex-column justify-content-center align-items-center"
+           style="background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('banner2.jpg') center/cover no-repeat; min-height: 220px;">
+        <h4 class="fw-bold">Clube de Assinatura</h4>
+        <p class="mb-3">Receba cafés selecionados todos os meses na sua casa.</p>
+        <a href="#" class="btn btn-light fw-semibold">Saiba Mais</a>
       </div>
     </div>
-  </section>
+
+    <!-- Banner 2: Kits para Presente -->
+    <div class="col-12 col-md-6">
+      <div class="p-5 text-white rounded shadow-sm text-center d-flex flex-column justify-content-center align-items-center"
+           style="background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('cat-kits.jpg') center/cover no-repeat; min-height: 220px;">
+        <h4 class="fw-bold">Kits para Presente</h4>
+        <p class="mb-3">Caixas especiais com canecas, moedores e grãos nobres.</p>
+        <a href="#" class="btn btn-light fw-semibold">Ver Kits</a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-- SEÇÃO 7: BENEFÍCIOS (4 + 4 + 4) -->
   <section class="bg-light py-5 border-top border-bottom">
